@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | YEG Designs</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+            color: #111820;
+        }
+
+        header {
+            position: absolute;
+            top: 28px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        header a {
+            display: inline-block;
+        }
+
+        header img {
+            width: min(180px, 32vw);
+            height: auto;
+            display: block;
+        }
+
+        main {
+            width: min(1180px, 88vw);
+            min-height: 100vh;
+            margin: 0 auto;
+            padding: 120px 0 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bio-layout {
+            width: 100%;
+            display: grid;
+            grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1.15fr);
+            align-items: center;
+            justify-content: center;
+            gap: clamp(45px, 7vw, 100px);
+        }
+
+        .portrait {
+            width: 100%;
+            max-width: 520px;
+            justify-self: center;
+            display: block;
+        }
+
+        .content {
+            max-width: 650px;
+            justify-self: center;
+        }
+
+        p {
+            margin: 0 0 20px;
+            font-size: clamp(17px, 1.5vw, 20px);
+            line-height: 1.75;
+            color: #3b4147;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 12px;
+            color: #111820;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .back:hover {
+            color: #1598e8;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                top: 20px;
+            }
+
+            main {
+                padding: 105px 0 50px;
+            }
+
+            .bio-layout {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .portrait {
+                max-width: 460px;
+            }
+
+            .content {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" aria-label="Back to YEG Designs home">
+            <img src="logo.png" alt="YEG Designs">
+        </a>
+    </header>
+
+    <main>
+        <div class="bio-layout">
+            <img class="portrait" src="Biopage.png" alt="Portrait">
+
+            <section class="content">
+                <p>I’m an architectural designer who enjoys turning ideas into memorable spaces.</p>
+
+                <p>My work sits at the intersection of architecture, visualization, and fabrication. I’m drawn to projects where design can make a meaningful difference—whether that means reimagining an existing façade, developing a custom architectural element, or finding a creative way to transform an ordinary space.</p>
+
+                <p>Over the years, I’ve had the opportunity to work across different stages of the design and construction process, from developing concepts and 3D visualizations to coordinating with contractors, consultants, and clients to bring those ideas into reality.</p>
+
+                <p>I’m naturally curious and enjoy exploring new materials, technologies, and ways of working. I believe good design is not only about how something looks, but also about how thoughtfully it is developed, communicated, and built.</p>
+
+                <p>YEG Designs is a place where I can bring all of these interests together—design, visualization, creativity, and making.</p>
+
+                <a class="back" href="index.html">← Back to home</a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
