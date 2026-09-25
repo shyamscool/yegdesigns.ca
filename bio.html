@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | YEG Designs</title>
+    <title>YEG Designs</title>
+
     <style>
-        * { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
 
         html, body {
             margin: 0;
@@ -14,69 +17,56 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #fff;
+            background: white;
             color: #111820;
         }
 
         header {
-            position: absolute;
-            top: 28px;
-            left: 0;
-            width: 100%;
             text-align: center;
+            padding: 30px 20px 0;
         }
 
         header a {
             display: inline-block;
+            line-height: 0;
         }
 
         header img {
-            width: min(180px, 32vw);
+            width: min(150px, 28vw);
             height: auto;
             display: block;
         }
 
         main {
-            width: min(1180px, 88vw);
-            min-height: 100vh;
+            width: min(900px, 88vw);
             margin: 0 auto;
-            padding: 120px 0 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .bio-layout {
-            width: 100%;
-            display: grid;
-            grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1.15fr);
-            align-items: center;
-            justify-content: center;
-            gap: clamp(45px, 7vw, 100px);
+            padding: 55px 0 80px;
+            text-align: center;
         }
 
         .portrait {
-            width: 100%;
-            max-width: 520px;
-            justify-self: center;
+            width: min(520px, 78vw);
+            height: auto;
             display: block;
+            margin: 0 auto 55px;
         }
 
         .content {
-            max-width: 650px;
-            justify-self: center;
+            width: 100%;
+            max-width: 780px;
+            margin: 0 auto;
         }
 
         p {
-            margin: 0 0 20px;
-            font-size: clamp(17px, 1.5vw, 20px);
+            margin: 0 0 25px;
+            font-size: clamp(17px, 1.4vw, 20px);
             line-height: 1.75;
             color: #3b4147;
         }
 
         .back {
             display: inline-block;
-            margin-top: 12px;
+            margin-top: 10px;
             color: #111820;
             text-decoration: none;
             font-size: 14px;
@@ -89,31 +79,29 @@
             color: #1598e8;
         }
 
-        @media (max-width: 800px) {
+        @media (max-width: 700px) {
             header {
-                top: 20px;
+                padding-top: 20px;
             }
 
             main {
-                padding: 105px 0 50px;
-            }
-
-            .bio-layout {
-                grid-template-columns: 1fr;
-                gap: 35px;
+                padding-top: 40px;
             }
 
             .portrait {
-                max-width: 460px;
+                margin-bottom: 40px;
             }
 
-            .content {
-                text-align: center;
+            p {
+                font-size: 17px;
+                line-height: 1.65;
             }
         }
     </style>
 </head>
+
 <body>
+
     <header>
         <a href="index.html" aria-label="Back to YEG Designs home">
             <img src="logo.png" alt="YEG Designs">
@@ -121,23 +109,26 @@
     </header>
 
     <main>
-        <div class="bio-layout">
-            <img class="portrait" src="Biopage.png" alt="Portrait">
 
-            <section class="content">
-                <p>I’m an architectural designer who enjoys turning ideas into memorable spaces.</p>
+        <img class="portrait" src="Biopage.png" alt="Portrait">
 
-                <p>My work sits at the intersection of architecture, visualization, and fabrication. I’m drawn to projects where design can make a meaningful difference—whether that means reimagining an existing façade, developing a custom architectural element, or finding a creative way to transform an ordinary space.</p>
+        <section class="content">
 
-                <p>Over the years, I’ve had the opportunity to work across different stages of the design and construction process, from developing concepts and 3D visualizations to coordinating with contractors, consultants, and clients to bring those ideas into reality.</p>
+            <p>I’m an architectural designer who enjoys turning ideas into memorable spaces.</p>
 
-                <p>I’m naturally curious and enjoy exploring new materials, technologies, and ways of working. I believe good design is not only about how something looks, but also about how thoughtfully it is developed, communicated, and built.</p>
+            <p>My work sits at the intersection of architecture, visualization, and fabrication. I’m drawn to projects where design can make a meaningful difference—whether that means reimagining an existing façade, developing a custom architectural element, or finding a creative way to transform an ordinary space.</p>
 
-                <p>YEG Designs is a place where I can bring all of these interests together—design, visualization, creativity, and making.</p>
+            <p>Over the years, I’ve had the opportunity to work across different stages of the design and construction process, from developing concepts and 3D visualizations to coordinating with contractors, consultants, and clients to bring those ideas into reality.</p>
 
-                <a class="back" href="index.html">← Back to home</a>
-            </section>
-        </div>
+            <p>I’m naturally curious and enjoy exploring new materials, technologies, and ways of working. I believe good design is not only about how something looks, but also about how thoughtfully it is developed, communicated, and built.</p>
+
+            <p>YEG Designs is a place where I can bring all of these interests together—design, visualization, creativity, and making.</p>
+
+            <a class="back" href="index.html">← Back to home</a>
+
+        </section>
+
     </main>
+
 </body>
 </html>
